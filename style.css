@@ -136,7 +136,7 @@ li {
     margin-bottom: var(--spacing-200);
 }
 
-li::before {
+li:before {
     font-weight: bold;
     color: var(--brown-800);
     display: inline-block;
@@ -145,14 +145,14 @@ li::before {
 }
 
 ul {
-    li::before {
+    li:before {
         content: '•';
     }
 }
 
 ol {
     counter-reset: item;
-    li::before {
+    li:before {
         counter-increment: item;
         content: counter(item) ".";
     }
